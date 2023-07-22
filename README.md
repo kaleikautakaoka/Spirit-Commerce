@@ -1,4 +1,5 @@
 # Spirit-Commerce
+---
 
 ## Technologies
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
@@ -15,17 +16,16 @@ A backend application that allows the user to track, update, and delete product.
 ---
 
 ## Features
+---
 
-Description of the code below...
-
+Description of a code snippet below...
 ```
 CODE SNIPPET WILL GO IN HERE
-
 ```
 ---
 
 ## Deployment Link
-
+---
 - [Spirit Commerce](https://)
 ---
 
@@ -39,6 +39,7 @@ CODE SNIPPET WILL GO IN HERE
 ---
 
 ## Installation
+---
 
 Below is the following installing steps to install and run this app.
 
@@ -72,6 +73,7 @@ Insomnia routes are commented in each route file.
 http://localhost:3001
 ```
 ## Sources
+---
 - []()
 - []()
 - []()
@@ -90,7 +92,7 @@ http://localhost:3001
 
 
 ## Credits
-
+---
 - [nodesource](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 - [medium](https://medium.com/the-javascript-dojo/sequelize-project-setup-4a6a566c6cfa)
 - []()
@@ -100,7 +102,7 @@ http://localhost:3001
 ---
 
 ## License
-
+---
 MIT
 
 
