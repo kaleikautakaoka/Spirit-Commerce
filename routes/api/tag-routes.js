@@ -25,4 +25,6 @@ router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
 });
 
+
+// export router
 module.exports = router;

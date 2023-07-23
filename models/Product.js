@@ -12,11 +12,11 @@ Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // Turn on auto increment
+      autoIncrement: true,
       // Instruct that this is the Primary Key
       primaryKey: true,
-      // Turn on auto increment
-      autoIncrement: true
+      allowNull: false
   },
   product_name: {
       type: DataTypes.STRING,
@@ -58,4 +58,5 @@ Product.init(
   }
 );
 
+// Export the model
 module.exports = Product;

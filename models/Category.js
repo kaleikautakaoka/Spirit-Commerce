@@ -8,12 +8,13 @@ Category.init(
   {
     id: {
       type: DataTypes.INTEGER,
+      // Turn on auto increment
+      autoIncrement: true,
       allowNull: false,
       // Instruct that this is the Primary Key
-      primaryKey: true,
-      // Turn on auto increment
-      autoIncrement: true
+      primaryKey: true
   },
+
   category_name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -28,4 +29,6 @@ Category.init(
   }
 );
 
+
+// Export the model
 module.exports = Category;
