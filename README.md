@@ -62,19 +62,14 @@ npm run watch
 ```
 
 5. Test routes via insomnia
-
 ```
-Insomnia routes are commented in each route file.
-```
-
-6. View study application via :
 
 ```
 http://localhost:3001
 ```
 ## Sources
 ---
-- []()
+- [sequelize](https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/)
 - []()
 - []()
 - []()
