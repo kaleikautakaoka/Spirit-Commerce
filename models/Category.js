@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
+// eslint-disable-next-line import/extensions
 const sequelize = require('../config/connection.js');
 
 class Category extends Model {}

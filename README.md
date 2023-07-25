@@ -18,15 +18,32 @@ A backend application that allows the user to track, update, and delete product.
 ## Features
 ---
 
-Description of a code snippet below...
+Description of a code snippet below
 ```
+  The code below allows the user to find one category by its `id` value
+  and includes its associated Products
+
 CODE SNIPPET WILL GO IN HERE
 ```
+router.get('/:id', async (req, res) => {
+  try { 
+    const categoryInfo = await Category.findByPk(req.params.id, {
+      include: [ {model : Product} ],
+    });
+    if (!categoryInfo) {
+      res.status(404).json({ message: 'No category found with that id!' });
+      return;
+    } res.status(200).json(categoryInfo);
+  }
+  catch (err) {
+    res.status(500).json(err);
+  }
+});
 ---
 
 ## Deployment Link
 ---
-- [Spirit Commerce](https://)
+- [Spirit Commerce](https://github.com/kaleikautakaoka/Spirit-Commerce)
 ---
 
 ## Table of contents
@@ -43,19 +60,19 @@ CODE SNIPPET WILL GO IN HERE
 
 Below is the following installing steps to install and run this app.
 
-1. Clone this repo
+1. Clone this repo. First cd into the folder where you would like to save this project. Then enter the command below.
 
 ```sh
-git clone 
+git clone git@github.com:kaleikautakaoka/Spirit-Commerce.git
 ```
 
-3. Seed the data base
+3. Run this command below to seed the data base. You will find this configuration in the package.json file provided in the repo.
 
 ```sh
 npm run seed
 ```
 
-4. Run server
+4. Start the server by running the code below. This is convienent as it will be using nodemon.
 
 ```sh
 npm run watch
@@ -63,38 +80,24 @@ npm run watch
 
 5. Test routes via insomnia
 ```
-
+- [Insomnia](https://insomnia.rest/download)
 ```
 http://localhost:3001
 ```
 ## Sources
 ---
 - [sequelize](https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-
+- [nodesource](https://nodesource.com/)
+- [medium](https://medium.com/the-javascript-dojo/sequelize-project-setup-4a6a566c6cfa)
+- [sebhastian](https://sebhastian.com/mysql-failed-to-open-file-error-2/)
+- [stackoverflow](https://stackoverflow.com/questions/14684063/mysql-source-error-2)
+- [digitalocean](https://www.digitalocean.com/community/tutorials/how-to-use-sequelize-with-node-js-and-mysql)
+- [turing](https://www.turing.com/kb/mysql-connection-with-node-js-using-sequelize-and-express)
+- [eslint](https://www.npmjs.com/package/eslint-plugin-prettier)
 
 ## Credits
 ---
-- [nodesource](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
-- [medium](https://medium.com/the-javascript-dojo/sequelize-project-setup-4a6a566c6cfa)
-- []()
-- []()
-- []()
-
----
+DU Bootcamp Cirruculm
 
 ## License
 ---

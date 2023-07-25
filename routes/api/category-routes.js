@@ -1,9 +1,9 @@
 // Purpose: To provide routes to perform CRUD operations on the Category model
 const router = require('express').Router();
-//Bringing in Category and Product models
+// Bringing in Category and Product models
 const { Category, Product } = require('../../models');
 
-
+// The `/api/categories` endpoint
 
 router.get('/', async (req, res) => {
   // All categories
@@ -23,14 +23,13 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
   try { 
     const categoryInfo = await Category.findByPk(req.params.id, {
-      include: [ {model : Product} ],
+      include: [ { model : Product } ],
     });
     if (!categoryInfo) {
       res.status(404).json({ message: 'No category found with that id!' });
       return;
     } res.status(200).json(categoryInfo);
-  }
-  catch (err) {
+  } catch (err) {
     res.status(500).json(err);
   }
 });

@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
+// eslint-disable-next-line import/extensions
 const sequelize = require('../config/connection.js');
 
 class Tag extends Model {}
@@ -16,8 +17,7 @@ Tag.init(
         autoIncrement: true
   },
   tag_name: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.STRING
   }
   },
   {
