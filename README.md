@@ -2,10 +2,11 @@
 ---
 
 ## Technologies
+---
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-MySQL-1f425f.svg)](https://www.javascript.com)
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
 [![made-with-node.js](https://img.shields.io/badge/Made%20with-Node.js-1f425f.svg)](https://www.javascript.com)
 [![made-with-express.js](https://img.shields.io/badge/Made%20with-Express.js-1f425f.svg)](http://expressjs.com/)
-[![made-with-Jquery](https://img.shields.io/badge/Made%20with-Jquery-1f425f.svg)](https://jqueryui.com/)
 [![made-with-handle.js](https://img.shields.io/badge/Made%20with-Handle.js-1f425f.svg)](https://handlebarsjs.com/)
 
 ## Description
@@ -18,12 +19,11 @@ A backend application that allows the user to track, update, and delete product.
 ## Features
 ---
 
-Description of a code snippet below
+Descripiton of code snippet below
 ```
-  The code below allows the user to find one category by its `id` value
-  and includes its associated Products
+router.get async function will find all categories and include the product model. If there is no category found with that id, it will return a 404 error. If there is an error, it will return a 500 error.
+```
 
-CODE SNIPPET WILL GO IN HERE
 ```
 router.get('/:id', async (req, res) => {
   try { 
