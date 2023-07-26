@@ -12,11 +12,11 @@ Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      // Turn on auto increment
-      autoIncrement: true,
       // Instruct that this is the Primary Key
       primaryKey: true,
-      allowNull: false
+      allowNull: false,
+      // Turn on auto increment
+      autoIncrement: true
   },
   product_name: {
       type: DataTypes.STRING,

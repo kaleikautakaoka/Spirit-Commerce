@@ -13,7 +13,7 @@
 A backend application that allows the user to track, update, and delete product.
 ---
 
-## ![Alt text](./public/assets/PICTURE GOES HERE)
+## ![Image of the code](./public/assets/PICTURE GOES HERE)
 ---
 
 ## Features
@@ -98,6 +98,7 @@ http://localhost:3001
 ## Credits
 ---
 DU Bootcamp Cirruculm
+Tutor: Andres Jimenez
 
 ## License
 ---
