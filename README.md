@@ -13,7 +13,7 @@
 A backend application that allows the user to track, update, and delete product.
 ---
 
-## ![Image of the code](./public/assets/PICTURE GOES HERE)
+## ![Video of the code](https://app.castify.com/view/e161b65c-b010-4969-bcc7-9bd759b9b29d)
 ---
 
 ## Features
