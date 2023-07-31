@@ -13,7 +13,15 @@
 A backend application that allows the user to track, update, and delete product.
 ---
 
-[Video of Code](https://app.castify.com/view/e161b65c-b010-4969-bcc7-9bd759b9b29d)
+## Video Walkthrough
+![Video-of-Code](https://app.castify.com/view/e161b65c-b010-4969-bcc7-9bd759b9b29d)
+
+## Images of code and testing in insomnia
+![Image-of-category-api](images/categspiritCommerce.png)
+![Image-of-category-by-ID-route](images/categbyId.png)
+![Image-of-category-get-route](images/getallcatspir.png)
+![Image-of-Update-Put-Route](images/updatespir.png)
+
 
 ## Features
 ---
@@ -42,8 +50,9 @@ router.get('/:id', async (req, res) => {
 
 ## Deployment Link
 ---
-- [Spirit Commerce](https://github.com/kaleikautakaoka/Spirit-Commerce)
----
+
+![SpiritCommerce](https://github.com/kaleikautakaoka/Spirit-Commerce)
+
 
 ## Table of contents
 ---
@@ -79,9 +88,9 @@ npm run watch
 
 5. Test routes via insomnia
 ```
-- [Insomnia](https://insomnia.rest/download)
+Insomnia: https://insomnia.rest/download
 ```
-http://localhost:3001
+ PORT: http://localhost:3001
 ```
 ## Sources
 ---
